@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BitVally Website & Softwere Development Company</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+    <link rel="shortcut icon" type="x-icon" href="/GIf-img/b (1).png">
+
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
+        }
+        
+li {
+    display: inline-block;
+}
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Highlight Current Page Link */
+a.active {
+    color: #007bff;
+}
+    </style>
+</head>
+<body class="relative">
+     <!-- <div class="fixed bottom-5 left-5 lg:left-10 z-50 flex lg:flex-row md:flex-row flex-col items-center lg:space-x-4 space-y-2 md:space-x-4">
+        <a href="https://wa.me/918287758779?text=Hello%2C%20I%20am%20interested%20in%20your%20services%20at%20BitVally." class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg lg:mt-2 md:mt-2 mt-0 hover:bg-green-600 hover:text-white transition-all duration-300" target="_blank">
+            <i class="ri-whatsapp-line text-3xl"></i>
+        </a>
+        <!-- Call Button -->
+        <!-- <a href="tel:+918/882758514" class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-blue-700 hover:text-white transition-all duration-300"> -->
+            <!-- <i class="ri-phone-fill text-3xl"></i> -->
+        <!-- </a> -->
+    <!-- </div> --> -->
+
+    <header>
+        <nav class="flex flex-row justify-between lg:px-10 px-6 py-3 items-center"
+            style="font-family: 'Inter', sans-serif;">
+            <div class="logo">
+                <a href="/index.html"><img id="logo" src="/GIf-img/BitvallyTechLogo.png" alt="BitVally" width="130px"></a>
+            </div>
+            <ul class="flex-row justify-between gap-8 font-semibold text-lg ml-10 hidden lg:flex">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Service</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+
+
+            <div class="sidewale flex flex-row items-center">
+                <div class="flex flex-row items-center">
+                    <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg"
+                        type="checkbox">
+                        <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                                <circle cx="11" cy="3" r="8" fill="black"></circle>
+                            </mask>
+                            <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                            <g>
+                                <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                                <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                            </g>
+                        </svg>
+                    </label>
+
+                    <style>
+                        body {
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+
+                        body.light-theme {
+                            --logo-color: black;
+                            background-color: #ffffff;
+                            color: #000000;
+                        }
+
+                        body.dark-theme {
+                            --logo-color: white;
+                            background-color: #000000;
+                            color: #ffffff;
+                        }
+
+                        #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                            transition: filter 0.3s;
+                        }
+
+                        body.light-theme #logo {
+                            mix-blend-mode: unset;
+                            filter: none;
+                        }
+
+                        body.dark-theme #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                        }
+
+                        body.dark-theme .services .bg-white {
+
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .services .bg-white h3 {
+
+                            color: white;
+                        }
+
+                        body.dark-theme .services .bg-white p {
+
+                            color: rgb(206, 206, 206);
+                        }
+
+                        body.dark-theme .bgaa {
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .bgaa p {
+                            color: rgb(206, 206, 206);
+                        }
+
+                        main i {
+                            color: #000;
+                        }
+
+                        .photu h1 {
+                            color: #000;
+                        }
+
+                        #ser {
+                            color: white;
+                        }
+
+                        #team {
+                            color: #858585;
+                        }
+
+                        #mobile-menu a,
+                        #mobile-menu i {
+                            color: black;
+                        }
+
+                        .services h3 {
+                            color: black;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            const themeToggleInput = document.getElementById('themeToggle');
+                            const currentTheme = localStorage.getItem('theme') || 'light';
+                            document.body.classList.add(currentTheme + '-theme');
+                            if (currentTheme === 'dark') {
+                                themeToggleInput.checked = true;
+                            }
+
+                            themeToggleInput.addEventListener('change', () => {
+                                if (themeToggleInput.checked) {
+                                    document.body.classList.remove('light-theme');
+                                    document.body.classList.add('dark-theme');
+                                    localStorage.setItem('theme', 'dark');
+                                } else {
+                                    document.body.classList.remove('dark-theme');
+                                    document.body.classList.add('light-theme');
+                                    localStorage.setItem('theme', 'light');
+                                }
+                            });
+                        });
+
+
+                    </script>
+
+
+
+                    <button id="menu-btn" class="lg:hidden flex">
+                        <i class="ri-menu-5-line text-2xl"></i>
+                    </button>
+                </div>
+
+                <div class="rs lg:flex flex-row items-center justify-around hidden">
+
+
+                    <style>
+                        .themeToggle {
+                            color: #bbb;
+                            width: 2em;
+                        }
+
+                        .st-sunMoonThemeToggleBtn {
+                            position: relative;
+                            cursor: pointer;
+                            margin-right: 8px;
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput {
+                            opacity: 0;
+                            width: 100%;
+                            aspect-ratio: 1;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg {
+                            position: absolute;
+                            left: -5;
+                            width: 100%;
+                            height: 100%;
+                            transition: transform 0.4s ease;
+                            transform: rotate(40deg);
+                            top: 0;
+
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunMoon {
+                            transform-origin: center center;
+                            transition: inherit;
+                            transform: scale(1);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay {
+                            transform-origin: center center;
+                            transform: scale(0);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg mask>circle {
+                            transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+                            transform: translate(0px, 0px);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay2 {
+                            animation-delay: 0.05s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay3 {
+                            animation-delay: 0.1s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay4 {
+                            animation-delay: 0.17s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.25s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.29s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
+                            transform: rotate(90deg);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
+                            transform: translate(16px, -3px);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
+                            transform: scale(0.55);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
+                            animation: showRay1832 0.4s ease 0s 1 forwards;
+                        }
+
+                        @keyframes showRay1832 {
+                            0% {
+                                transform: scale(0);
+                            }
+
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+
+                        body.dark-theme .iconooo {
+                            color: #0000ff;
+                        }
+                    </style>
+
+                    <a href="/contact.html" class="hidden md:hidden lg:flex">
+                        <button
+                            class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
+                            <h1 class="text-white">Contact Us</h1>
+                            <i class="ri-arrow-right-up-line bg-white rounded-full px-1 iconooo"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" style="font-family: 'Inter', sans-serif;"
+            class="fixed top-0 left-0 w-full h-full bg-white hidden transition-transform transform -translate-x-full z-50 flex flex-col items-center justify-center">
+            <button id="close-menu" class="absolute top-5 right-5 text-3xl">
+                <i class="ri-close-line"></i>
+            </button>
+            <ul class="flex flex-col gap-6 text-lg font-semibold text-center">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Service</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('hidden');
+            setTimeout(function () {
+                mobileMenu.classList.remove('-translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+            }, 10); // Delay to trigger transition
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('-translate-x-full');
+            setTimeout(function () {
+                mobileMenu.classList.add('hidden');
+            }, 300); // Match the duration of the transition
+        });
+    </script>
+
+    <style>
+        body.dark-theme p{
+            color: rgb(206, 206, 206);
+        }
+    </style>
+
+    <main class="w-full">
+
+        <section class="px-2 py-12 lg:px-12 w-full" style="font-family: 'Archivo', sans-serif;">
+            
+            <div class="container mx-auto mt-3 lg:mt-7 w-full">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+                    <div class="w-full md:w-1/2 lg:w-1/3 space-y-4 px-6 lg:px-0">
+                        <h2 class="text-3xl md:text-2xl lg:text-3xl font-bold text-blue-600">Contact Information</h2>
+                        <p class="text-lg">Feel free to reach out to us via any of the methods below:</p>
+                        <!-- <div>
+                            <h3 class="text-xl font-semibold">Address:</h3>
+                            <p>9/501 West Kanti Nagar ,Shahdra ,Delhi - 51</p>
+                        </div> -->
+                        <div>
+                            <h3 class="text-xl font-semibold">Email:</h3>
+                            <p><a href="mailto:info@BitVally.com" class="text-blue-500">info@BitVally.com</a></p>
+                        </div>
+                        <!-- <div>
+                            <h3 class="text-xl font-semibold">Phone:</h3>
+                            <p><a href="tel:+91 8287758779" class="text-blue-500">+91 8287758779</a></p>
+                            <p><a href="tel:+91 8448292403" class="text-blue-500">+91 8448292403</a></p>
+                        </div> -->
+                    </div>
+    
+                    <div class="w-full md:w-[69%] p-6 rounded-lg -mt-0 md:-mt-10 lg:-mt-10">
+                        <form action="#" method="POST" class="space-y-4">
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="4107d842-d4ba-4efb-827a-19a00b9f55dc">
+                            
+                            <!-- Form Inputs. Each input must have a name="" attribute -->
+                            <h2 class="text-blue-600 text-2xl font-semibold">Get in touch</h2>
+                            <h1 class="text-3xl font-bold">Let’s Chat 👋 Consultation Is Free!</h1>
+                            <p class="text-lg text-gray-500 mb-7">Have questions or feedback? We're here to help. Send us a message, and we'll respond within 50 Minutes</p>
+                            
+                            <div>
+                                <label for="name" class="block text-lg font-medium text-gray-700">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                                <textarea name="message" id="message" placeholder="Message" required class="mt-1 p-2 block w-full border border-gray-200 bg-gray-100 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                            </div>
+                            
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
+                            <div>
+                                <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="mt-12 px-6 lg:px-0" style="font-family: 'Archivo', sans-serif;">
+                    <h3 class="text-2xl font-bold mb-4">Find Us on the Map</h3>
+                    <div class="h-64 w-full rounded-lg shadow-md overflow-hidden">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=""></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#4B5563" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#374151" />o
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#1F2937" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#111827" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+
+        <style>
+            .waves {
+                position: relative;
+                width: 100%;
+                height: 15vh;
+                margin-bottom: -7px;
+                /*Fix for safari gap*/
+                min-height: 100px;
+                max-height: 150px;
+            }
+
+            .content {
+                position: relative;
+                height: 20vh;
+                text-align: center;
+                background-color: gray;
+            }
+
+            /* Animation */
+
+            .parallax>use {
+                animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            }
+
+            .parallax>use:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            .parallax>use:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            .parallax>use:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            .parallax>use:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+
+            @keyframes move-forever {
+                0% {
+                    transform: translate3d(-90px, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(85px, 0, 0);
+                }
+            }
+
+            /*Shrinking for mobile*/
+            @media (max-width: 768px) {
+                .waves {
+                    height: 40px;
+                    min-height: 40px;
+                }
+
+                .content {
+                    height: 30vh;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+        </div>
+    </main>
+    <footer class="footer-section bg-gray-900 relative" style="font-family: 'Inter', sans-serif;">
+        <div class="container px-8 py-3">
+            <div class="footer-cta pt-5 pb-5 border-b border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="single-cta flex items-center">
+                        <i class="fas fa-map-marker-alt text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <!-- <h4 class="text-white text-lg font-semibold">Find us</h4> -->
+                            <!-- <span class="text-gray-500">9/501 West Kanti Nagar ,Shahdra ,Delhi - 51</span>/ -->
+                        </div>
+                    </div>
+                    <div class="single-cta flex items-center ml-0 md:ml-6 lg:ml-12">
+                        <i class="fas fa-phone text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <!-- <h4 class="text-white text-lg font-semibold">Call us</h4> -->
+                            <!-- <span class="text-gray-500">+91 8287758779 , +91 8882758514</span> -->
+                        </div>
+                    </div>
+                    <div class="single-cta flex items-center">
+                        <i class="far fa-envelope-open text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <h4 class="text-white text-lg font-semibold">Mail us</h4>
+                            <span class="text-gray-500">info@bitvally.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5 px-2">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="footer-widget mb-8 md:mb-0">
+                        <div class="footer-logo -mt-0 md:-mt-8 lg:-mt-16 ">
+                            <a href="#"><img src="/GIf-img/BitvallyTechLogo22.png" class="img-fluid" alt="BitVally" 
+                                     style="filter: invert(1);"></a>
+                        </div>
+                         <!-- <div class="footer-text -mt-0 md:-mt-7 lg:-mt-10  mb-4">
+                            <p class="text-gray-500">Crafting websites and graphic designs for businesses and startups.
+                                Proudly served 117+ satisfied clients. Follow for our exciting startup journey.</p>
+                        </div> -->
+                        <div class="footer-social-icon flex flex-col">
+                            <span class="text-white text-lg ">Follow us</span>
+                            <div class="icons text-3xl mt-1">
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-linkedin-box-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widget ml-0 md:ml-8 lg:ml-14 -mt-5 md:-mt-0 lg:mt-0">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold mb-5"> Links</h3>
+                        </div>
+                        <div class="dabbe flex flex-row gap-20 md:gap-8 lg:gap-20">
+                            <ul class="">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">about</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">portfolio</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                            <!-- <ul>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">About us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Our Services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Expert Team</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Latest News</a></li>
+                            </ul> -->
+                        </div>
+
+                    </div>
+                    <div class="footer-widget ml-0 md:ml-3">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold">Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-5">
+                            <p class="text-gray-500">Don’t miss to subscribe to our new feeds, kindly fill the form
+                                below.</p>
+                        </div>
+                        <div class="subscribe-form flex flex-row">
+                            <input type="text" placeholder="Email Address" class="w-full bg-gray-800 text-white p-3">
+                            <button class="bg-blue-600 text-white p-3"><i class="ri-send-plane-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area bg-gray-800 px-8 py-3">
+            <div class="container">
+                <div class="row flex flex-row justify-between">
+                    <div class="col-lg-6 text-center lg:text-left">
+                        <div class="copyright-text">
+                            <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a href="#"
+                                    class="text-blue-600">Bitvally</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hidden lg:block text-right">
+                        <div class="footer-menu">
+                            <ul class="flex flex-row gap-3">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Terms</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Privacy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Policy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

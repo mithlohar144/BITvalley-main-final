@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service | BitVally Website & Softwere Development Company</title>
+
+    <link rel="canonical" href="https://devndez.com/services.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+    <link rel="shortcut icon" type="x-icon" href="/GIf-img/b (1).png">
+
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #000000 10%, #0000ff 100%, #ff0000 101%, #800080 100%);
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        /* Highlight Current Page Link */
+        a.active {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body class="relative">
+    
+    <header>
+        <nav class="flex flex-row justify-between lg:px-10 px-6 py-3 items-center"
+            style="font-family: 'Inter', sans-serif;">
+            <div class="logo">
+                <a href="/index.html"><img id="logo" src="/GIf-img/BitvallyTechLogo.png" alt="BitVally" width="130px"></a>
+            </div>
+            <ul class="flex-row justify-between gap-8 font-semibold text-lg ml-10 hidden lg:flex">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Service</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+
+
+            <div class="sidewale flex flex-row items-center">
+                <div class="flex flex-row items-center">
+                    <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn text-sm md:text-l lg:text-lg"
+                        type="checkbox">
+                        <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                            <mask id="moon-mask">
+                                <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                                <circle cx="11" cy="3" r="8" fill="black"></circle>
+                            </mask>
+                            <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                            <g>
+                                <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                                <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                                <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                                <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                            </g>
+                        </svg>
+                    </label>
+
+                    <style>
+                        body {
+                            transition: background-color 0.3s, color 0.3s;
+                        }
+
+                        body.light-theme {
+                            --logo-color: black;
+                            background-color: #ffffff;
+                            color: #000000;
+                        }
+
+                        body.dark-theme {
+                            --logo-color: white;
+                            background-color: #000000;
+                            color: #ffffff;
+                        }
+
+                        #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                            transition: filter 0.3s;
+                        }
+
+                        body.light-theme #logo {
+                            mix-blend-mode: unset;
+                            filter: none;
+                        }
+
+                        body.dark-theme #logo {
+                            mix-blend-mode: difference;
+                            filter: invert(1);
+                        }
+
+                        body.dark-theme .services .bg-white {
+
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .services .bg-white h3 {
+
+                            color: white;
+                        }
+
+                        body.dark-theme .services .bg-white p {
+
+                            color: rgb(206, 206, 206);
+                        }
+
+                        body.dark-theme .bgaa {
+                            background-color: #111827;
+                        }
+
+                        body.dark-theme .bgaa p {
+                            color: rgb(206, 206, 206);
+                        }
+
+                        main i {
+                            color: #000;
+                        }
+
+                        .photu h1 {
+                            color: #000;
+                        }
+
+                        #ser {
+                            color: white;
+                        }
+
+                        #team {
+                            color: #858585;
+                        }
+
+                        #mobile-menu a,
+                        #mobile-menu i {
+                            color: black;
+                        }
+
+                        .services h3 {
+                            color: black;
+                        }
+                    </style>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            const themeToggleInput = document.getElementById('themeToggle');
+                            const currentTheme = localStorage.getItem('theme') || 'light';
+                            document.body.classList.add(currentTheme + '-theme');
+                            if (currentTheme === 'dark') {
+                                themeToggleInput.checked = true;
+                            }
+
+                            themeToggleInput.addEventListener('change', () => {
+                                if (themeToggleInput.checked) {
+                                    document.body.classList.remove('light-theme');
+                                    document.body.classList.add('dark-theme');
+                                    localStorage.setItem('theme', 'dark');
+                                } else {
+                                    document.body.classList.remove('dark-theme');
+                                    document.body.classList.add('light-theme');
+                                    localStorage.setItem('theme', 'light');
+                                }
+                            });
+                        });
+
+
+                    </script>
+
+
+
+                    <button id="menu-btn" class="lg:hidden flex">
+                        <i class="ri-menu-5-line text-2xl"></i>
+                    </button>
+                </div>
+
+                <div class="rs lg:flex flex-row items-center justify-around hidden">
+
+
+                    <style>
+                        .themeToggle {
+                            color: #bbb;
+                            width: 2em;
+                        }
+
+                        .st-sunMoonThemeToggleBtn {
+                            position: relative;
+                            cursor: pointer;
+                            margin-right: 8px;
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput {
+                            opacity: 0;
+                            width: 100%;
+                            aspect-ratio: 1;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg {
+                            position: absolute;
+                            left: -5;
+                            width: 100%;
+                            height: 100%;
+                            transition: transform 0.4s ease;
+                            transform: rotate(40deg);
+                            top: 0;
+
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunMoon {
+                            transform-origin: center center;
+                            transition: inherit;
+                            transform: scale(1);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay {
+                            transform-origin: center center;
+                            transform: scale(0);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg mask>circle {
+                            transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+                            transform: translate(0px, 0px);
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay2 {
+                            animation-delay: 0.05s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay3 {
+                            animation-delay: 0.1s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay4 {
+                            animation-delay: 0.17s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.25s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn svg .sunRay5 {
+                            animation-delay: 0.29s !important;
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg {
+                            transform: rotate(90deg);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg mask>circle {
+                            transform: translate(16px, -3px);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunMoon {
+                            transform: scale(0.55);
+                        }
+
+                        .st-sunMoonThemeToggleBtn .themeToggleInput:checked+svg .sunRay {
+                            animation: showRay1832 0.4s ease 0s 1 forwards;
+                        }
+
+                        @keyframes showRay1832 {
+                            0% {
+                                transform: scale(0);
+                            }
+
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+
+                        body.dark-theme .iconooo {
+                            color: #0000ff;
+                        }
+                    </style>
+
+                    <a href="/contact.html" class="hidden md:hidden lg:flex">
+                        <button
+                            class="flex flex-row items-center text-lg gap-3 font-medium bg-blue-600 px-6 py-2 rounded-3xl">
+                            <h1 class="text-white">Contact Us</h1>
+                            <i class="ri-arrow-right-up-line bg-white rounded-full px-1 iconooo"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" style="font-family: 'Inter', sans-serif;"
+            class="fixed top-0 left-0 w-full h-full bg-white hidden transition-transform transform -translate-x-full z-50 flex flex-col items-center justify-center">
+            <button id="close-menu" class="absolute top-5 right-5 text-3xl">
+                <i class="ri-close-line"></i>
+            </button>
+            <ul class="flex flex-col gap-6 text-lg font-semibold text-center">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/services.html">Service</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('hidden');
+            setTimeout(function () {
+                mobileMenu.classList.remove('-translate-x-full');
+                mobileMenu.classList.add('translate-x-0');
+            }, 10); // Delay to trigger transition
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('-translate-x-full');
+            setTimeout(function () {
+                mobileMenu.classList.add('hidden');
+            }, 300); // Match the duration of the transition
+        });
+    </script>
+
+    <style>
+        body.dark-theme p{
+            color: rgb(206, 206, 206);
+        }
+    </style>
+
+    <main>
+
+        <section class="mt-1 md:mt-2 lg:mt-0 px-6 lg:px-10 py-3 " style="font-family: 'Archivo', sans-serif;">
+            <div class="textm flex flex-col md:flex-row justify-between items-center gap-3">
+                <div class="testy w-full md:w-1/2 mt-0 md:-mt-6 lg:mt-0">
+                    <h3 class="mt-8 text-2xl font-semibold text-gray-700" id="team">Our Services</h3>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-2 md:mt-3 lg:mt-4 w-full md:1/2 lg:w-full">
+                       Empowering Businesses with <br> <span class="text-blue-700">Cutting-Edge</span> Solutions</h1>
+                    <p class="mt-3 md:mt-2 lg:mt-4 -ml-0 md:ml-1 lg:ml-1">At BitVally, we specialize in delivering top-tier business solutions designed to enhance efficiency, drive growth, and ensure long-term success. Our expert team harnesses innovative strategies and advanced technologies to propel your business forward and unlock its full potential.
+</p>
+                    <div class="btns  -ml-0 md:ml-1 lg:ml-1 mt-5 md:mt-3 lg:mt-5">
+                        <a href="/services.html"><button
+                                class="bg-blue-600 text-white px-4 py-2 rounded-xl mr-3 md:mr-5 lg:mr-5">Get
+                                Started</button></a>
+                        <a href="/about.html"><button class="border-2 rounded-xl px-4 py-2 border-blue-600">Learn
+                                More</button></a>
+                    </div>
+                </div>
+                <img src="/GIf-img/Service.gif" alt=""
+                    class="w-full md:w-1/2 lg:w-1/3 mr-0 md:mr-4 lg:mr-16">
+            </div>
+        </section>
+
+         <section class="flex items-center flex-col md:flex-col justify-center mt-10 px-6 lg:px-10 py-3  "
+            style="font-family: 'Archivo', sans-serif;">
+            
+            <div class="text-center max-w-2xl">
+                <h2 class="text-xl text-gray-600 font-semibold mb-2 md:mb-4">ALL SERVICES</h2>
+                <h1 class="text-3xl font-bold mb-2 md:mb-4">Complete Business <span
+                        class="text-blue-600">Solutions</span> Delivered</h1>
+                <p class="text-l mb-4 text-gray-400">We offer comprehensive business solutions, expertly designed to
+                    enhance efficiency, drive growth, and achieve exceptional results for your company.</p>
+            </div>
+             <div class="services grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-3 mb-10">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/Web-dev.gif" alt="Service 1"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-700 mb-4">Building responsive websites with custom designs, secure hosting, and
+                        efficient domain management for businesses and startups.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/SEO.gif" alt="Service 1"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+                    <p class="text-gray-700 mb-4">nhancing online visibility through SEO optimization, we craft responsive websites with
+                       tailored designs, secure hosting, and seamless domain management empowering businesses and startups to thrive in the digital landscape.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/05cd9a0bb4c72e5ba98ece031987955d.gif" alt="Service 2"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Mobile Development</h3>
+                    <p class="text-gray-700 mb-4">Crafting intuitive, visually engaging mobile interfaces that prioritize seamless navigation and user centered design ensuring optimal engagement and satisfaction.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/softwere.gif" alt="Service 1"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Softwere Development</h3>
+                    <p class="text-gray-700 mb-4">Developing scalable and efficient software solutions, tailored to business needs featuring custom designs, secure hosting, and seamless domain management for startups and enterprises.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/UI-UX.gif" alt="Service 2"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-700 mb-4">Crafting intuitive, aesthetically pleasing interfaces that prioritize user experience ensuring seamless navigation and optimal engagement.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/AI and Deep Learning.gif" alt="Service 2"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">AI & ML </h3>
+                    <p class="text-gray-700 mb-4">Leveraging AI and Machine Learning to develop intelligent, adaptive systems—enhancing user experience with data-driven insights and seamless interaction.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/web-hosting.gif" alt="Service 2"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Web Hosting</h3>
+                    <p class="text-gray-700 mb-4">Providing reliable and secure web hosting solutions—ensuring high performance, seamless uptime, and efficient domain management for businesses and individuals.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="/GIf-img/webdesign.gif" alt="Service 2"
+                        class="w-full h-48 object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+                    <p class="text-gray-700 mb-4">Crafting stunning, user-centric web experiences combining aesthetics, functionality, and seamless navigation to enhance engagement and satisfaction.</p>
+                    <a href="/services.html" class="text-blue-500 hover:text-blue-700 font-semibold">Learn More</a>
+                </div>
+
+             
+             
+             </div>
+     </section>
+
+
+           <div class=" py-12 px-7 sm:px-6 lg:px-12" style="font-family: 'Archivo', sans-serif;">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2 class="hulka text-3xl font-extrabold text-gray-900 sm:text-3xl">
+                        Recent <span class="text-blue-700">Projects</span>
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 nichg">
+                        BitVally recent projects feature cutting-edge design, user-friendly interfaces, and tailored
+                        solutions for clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="portfolio grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-12 px-7 sm:px-6 lg:px-12 -mt-8 lg:-mt-4">
+            <div>
+                <div class="grid-item relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-l duration-300">
+                    <img src="/project-img/Screenshot 2025-06-14 205851.png" alt="Alphankela" class="w-full h-full object-cover ">
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center">
+                        <img src="/project-img/Screenshot 2025-06-14 205851.png"   alt="Logo" class="w-8 h-8 rounded-full mr-3 object-contain transition-transform transform hover:scale-105 duration-300">
+                        <span class="font-semibold text-l hover:text-red-500">Auto Buzz </span>
+                    </div>
+                    <a href="https://instabuzz.vercel.app/" target="_blank" class="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-105 duration-200">
+                        <i class="ri-external-link-line text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-l duration-300">
+                    <img src="/project-img/Screenshot 2025-06-14 205905.png" alt="Brownway Medical" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center">
+                        <img src="/project-img/Screenshot 2025-06-14 205905.png" alt="Logo" class="w-8 h-8 rounded-full mr-3 bg-white transition-transform transform hover:scale-105 duration-300">
+                        <span class="font-semibold text-l hover:text-blue-500">Shree Garlic</span>
+                    </div>
+                    <a href=" https://shreegarlic.vercel.app/" target="_blank" class="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-105 duration-200">
+                        <i class="ri-external-link-line text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-l duration-300">
+                    <img src="/project-img/journal (1).png" alt="Nagar Security Group" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center">
+                        <img src="/project-img/journal (1).png" alt="Logo" class="w-8 h-8 rounded-full mr-3 object-cover bg-white transition-transform transform hover:scale-105 duration-300">
+                        <span class="font-semibold text-l hover:text-blue-700">Research Journal Website</span>
+                    </div>
+                    <a href="#" target="_blank" class="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-105 duration-200">
+                        <i class="ri-external-link-line text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="grid-item relative overflow-hidden rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-l duration-300">
+                    <img src="/project-img/journal (2).png" alt="Beauty Essence" class="w-full h-full object-cover">
+                </div>
+                <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center">
+                        <img src="/project-img/journal (2).png" alt="Logo" class="w-8 h-8 rounded-full mr-3 bg-white transition-transform transform hover:scale-105 duration-300">
+                        <span class="font-semibold text-l hover:text-red-400">Govt. School Website</span>
+                    </div>
+                    <a href="https://beautyessence.net.in" target="_blank" class="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-105 duration-200">
+                        <i class="ri-external-link-line text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            body.dark-theme .ri-external-link-line{
+                color: white;
+            }
+            body.dark-theme .hulka{
+                color: white;
+            }
+            body.dark-theme .nichg{
+                color: rgb(209, 209, 209);
+            }
+        </style>
+ <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#4B5563" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#374151" />o
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#1F2937" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#111827" />
+                </g>
+            </svg>
+        </div>
+        
+        <style>
+            .waves {
+                position: relative;
+                width: 100%;
+                height: 15vh;
+                margin-bottom: -7px;
+                /*Fix for safari gap*/
+                min-height: 100px;
+                max-height: 150px;
+            }
+
+            .content {
+                position: relative;
+                height: 20vh;
+                text-align: center;
+                background-color: gray;
+            }
+
+            /* Animation */
+
+            .parallax>use {
+                animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            }
+
+            .parallax>use:nth-child(1) {
+                animation-delay: -2s;
+                animation-duration: 7s;
+            }
+
+            .parallax>use:nth-child(2) {
+                animation-delay: -3s;
+                animation-duration: 10s;
+            }
+
+            .parallax>use:nth-child(3) {
+                animation-delay: -4s;
+                animation-duration: 13s;
+            }
+
+            .parallax>use:nth-child(4) {
+                animation-delay: -5s;
+                animation-duration: 20s;
+            }
+
+            @keyframes move-forever {
+                0% {
+                    transform: translate3d(-90px, 0, 0);
+                }
+
+                100% {
+                    transform: translate3d(85px, 0, 0);
+                }
+            }
+
+            /*Shrinking for mobile*/
+            @media (max-width: 768px) {
+                .waves {
+                    height: 40px;
+                    min-height: 40px;
+                }
+
+                .content {
+                    height: 30vh;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer-section bg-gray-900 relative" style="font-family: 'Inter', sans-serif;">
+        <div class="container px-8 py-3">
+            <div class="footer-cta pt-5 pb-5 border-b border-gray-800">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="single-cta flex items-center">
+                        <i class="fas fa-map-marker-alt text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <!-- <h4 class="text-white text-lg font-semibold">Find us</h4> -->
+                            <!-- <span class="text-gray-500">9/501 West Kanti Nagar ,Shahdra ,Delhi - 51</span>/ -->
+                        </div>
+                    </div>
+                    <div class="single-cta flex items-center ml-0 md:ml-6 lg:ml-12">
+                        <i class="fas fa-phone text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <!-- <h4 class="text-white text-lg font-semibold">Call us</h4> -->
+                            <!-- <span class="text-gray-500">+91 8287758779 , +91 8882758514</span> -->
+                        </div>
+                    </div>
+                    <div class="single-cta flex items-center">
+                        <i class="far fa-envelope-open text-orange-500 text-2xl mr-2"></i>
+                        <div class="cta-text">
+                            <h4 class="text-white text-lg font-semibold">Mail us</h4>
+                            <span class="text-gray-500">info@bitvally.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5 px-2">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="footer-widget mb-8 md:mb-0">
+                        <div class="footer-logo -mt-0 md:-mt-8 lg:-mt-16 ">
+                            <a href="#"><img src="/GIf-img/BitvallyTechLogo22.png" class="img-fluid" alt="BitVally"
+                                    style="filter: invert(1);"></a>
+                        </div>
+                        <!-- <div class="footer-text -mt-0 md:-mt-7 lg:-mt-10  mb-4">
+                            <p class="text-gray-500">Crafting websites and graphic designs for businesses and startups.
+                                Proudly served 117+ satisfied clients. Follow for our exciting startup journey.</p>
+                        </div> -->
+                        <div class="footer-social-icon flex flex-col">
+                            <span class="text-white text-lg ">Follow us</span>
+                            <div class="icons text-3xl mt-1">
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-facebook-circle-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i
+                                        class="ri-linkedin-box-fill"></i></a>
+                                <a href="#" class="text-white hover:text-blue-600"><i class="ri-instagram-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widget ml-0 md:ml-8 lg:ml-14 -mt-5 md:-mt-0 lg:mt-0">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold mb-5"> Links</h3>
+                        </div>
+                        <div class="dabbe flex flex-row gap-20 md:gap-8 lg:gap-20">
+                            <ul class="">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">about</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">portfolio</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                            <!-- <ul>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">About us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Our Services</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Expert Team</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact us</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Latest News</a></li>
+                            </ul> -->
+                        </div>
+
+                    </div>
+                    <div class="footer-widget ml-0 md:ml-3">
+                        <div class="footer-widget-heading">
+                            <h3 class="text-white text-lg font-semibold">Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-5">
+                            <p class="text-gray-500">Don’t miss to subscribe to our new feeds, kindly fill the form
+                                below.</p>
+                        </div>
+                        <div class="subscribe-form flex flex-row">
+                            <input type="text" placeholder="Email Address" class="w-full bg-gray-800 text-white p-3">
+                            <button class="bg-blue-600 text-white p-3"><i class="ri-send-plane-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area bg-gray-800 px-8 py-3">
+            <div class="container">
+                <div class="row flex flex-row justify-between">
+                    <div class="col-lg-6 text-center lg:text-left">
+                        <div class="copyright-text">
+                            <p class="text-gray-500">Copyright &copy; 2024, All Right Reserved <a href="#"
+                                    class="text-blue-600">Bitvally</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 hidden lg:block text-right">
+                        <div class="footer-menu">
+                            <ul class="flex flex-row gap-3">
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Home</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Terms</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Privacy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Policy</a></li>
+                                <li><a href="#" class="text-gray-500 hover:text-blue-600">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
