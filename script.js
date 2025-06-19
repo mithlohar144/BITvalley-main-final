@@ -14,11 +14,11 @@
 
   links.forEach((link) => {
     link.addEventListener('mouseenter', () => {
-      gsap.to(cursor, { scale: 1, backgroundColor: '#070066', duration: 0.3 });
+      gsap.to(cursor, { scale: 2, backgroundColor: '#070066', duration: 0.3 });
     });
 
     link.addEventListener('mouseleave', () => {
-      gsap.to(cursor, { scale: 2 ,zIndex:1,  backgroundColor: '#070066', duration: 0.1 });
+      gsap.to(cursor, { scale: 1 ,zIndex:1,  backgroundColor: '#070066', duration: 0.1 });
     });
   });
 
