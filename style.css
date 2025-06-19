@@ -75,4 +75,10 @@ html.has-scroll-smooth {
   pointer-events: none; /* Prevent interaction */
   transform: translate(-50%, -50%);
   z-index: 9999;
+  display: none;
+}
+@media (hover: hover) {
+  .custom-cursor {
+    display: block;
+  }
 }
