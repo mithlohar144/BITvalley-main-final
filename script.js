@@ -1,6 +1,7 @@
+const cursor = document.querySelector('.custom-cursor');
 
-  const cursor = document.querySelector('.custom-cursor');
-
+// Only initialize cursor if device supports hover
+if (window.matchMedia("(hover: hover)").matches) {
   window.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
       x: e.clientX,
@@ -18,13 +19,14 @@
     });
 
     link.addEventListener('mouseleave', () => {
-      gsap.to(cursor, { scale: 1.5 ,zIndex:1,  backgroundColor: '#070066', duration: 0.1 });
+      gsap.to(cursor, { scale: 1 ,zIndex:1,  backgroundColor: '#070066', duration: 0.1 });
     });
   });
+}
 
 
 
-  const scroll = new LocomotiveScroll({
+const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
