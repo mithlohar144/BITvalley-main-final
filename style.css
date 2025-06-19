@@ -64,3 +64,15 @@ html.has-scroll-smooth {
     [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
       right: auto;
       bottom: 0; }
+
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  /* background-color: black; */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent interaction */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
